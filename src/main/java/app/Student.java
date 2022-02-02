@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Student {
 
-	String studentID;
-	String name;
-	int score;
+	protected String studentID;
+	protected String name;
+	protected int score;
 
 
 	public Student(String studentID, String name, int score ) throws IllegalRangeException {
@@ -21,32 +21,32 @@ public class Student {
 	}
 
 
-	public String getStudentID() {
+	private String getStudentID() {
 		return studentID;
 	}
 
 
-	public void setStudentID(String studentID) {
+	private void setStudentID(String studentID) {
 		this.studentID = studentID;
 	}
 
 
-	public String getName() {
+	private String getName() {
 		return name;
 	}
 
 
-	public void setName(String name) {
+	private void setName(String name) {
 		this.name = name;
 	}
 
 
-	public int getScore() {
+	private int getScore() {
 		return score;
 	}
 
 
-	public void setScore(int score) {
+	private void setScore(int score) {
 		this.score = score;
 	}
 
