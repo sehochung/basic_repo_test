@@ -1,4 +1,4 @@
-package app;
+package com.Hcl.ExceptionHandling;
 
 public class IllegalRangeException extends Exception {
 	public IllegalRangeException() {
