@@ -4,20 +4,19 @@ public class Person {
 	String firstName;
 	String middleName;
 	String lastName;
-	
+
 	public Person(String name) throws IllegalNameLengthException {
-		
+
 		if (name.trim().length() < 10 || name.trim().length() > 15) {
 			throw new IllegalNameLengthException();
 		}
-		
+
 		String[] splitString = name.split(" ");
-		
+
 		firstName = splitString[0];
 		middleName = splitString[1];
 		lastName = splitString[2];
-		
-		
+
 	}
 
 	public String getFirstName() {
@@ -43,8 +42,5 @@ public class Person {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	
-	
 
 }
