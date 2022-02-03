@@ -5,6 +5,12 @@ import java.util.concurrent.TimeUnit;
 public class StudentMain {
 	public static void main(String args[]) throws InterruptedException {
 		
+		StringBuilder sb = new StringBuilder();
+		sb.append("hello");
+		sb.insert(1, "fuck");
+		
+		System.out.println(sb);
+		
 		Scanner s = new Scanner(System.in);
 		
 		System.out.println("Creating Account object...\n");
